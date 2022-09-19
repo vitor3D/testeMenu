@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 2000px;
+        }
+        .menu{
+            position: fixed;
+            top: 90%;
+            left: 25%;
+            width: 18rem;
+            height: 2.5rem;
+            background-color: rgba(255, 255, 255, 0);
+            border: 1px solid black;
+            border-radius: 50px;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content:flex-start ;
+            height: 100%;
+            margin: 0;
+        }
+        li {
+            margin-left: 0px;
+            padding-left: 10px;
+        }
+        img{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+    <ul>
+        <li><img src="https://img.icons8.com/ios-glyphs/30/000000/novel--v1.png"/></li>
+        <li><img src="https://img.icons8.com/material-outlined/24/000000/sci-fi.png"/></li>
+        <li><img src="https://img.icons8.com/small/32/000000/resume.png"/></li>
+        <li><img src="https://img.icons8.com/ios-filled/50/000000/fantasy.png"/></li>
+        <li><img src="https://img.icons8.com/ios-glyphs/30/000000/search-more.png"/></li>
+        <li><img src="https://img.icons8.com/ios-glyphs/30/000000/clear-search.png"/></li>
+    </ul>
+    </div>
+
+    <img id="image" src="https://img.icons8.com/ios-glyphs/30/000000/search-more.png" onclick="troca()">
+    <script>
+        var img = document.querySelector("#image");
+
+        function troca() {
+        img.setAttribute('src', 'https://img.icons8.com/ios-glyphs/30/000000/clear-search.png');
+        }
+    </script>
+</body>
+</html>
